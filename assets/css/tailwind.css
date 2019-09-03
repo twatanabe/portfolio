@@ -1,0 +1,126 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings:    "kern";
+  -ms-font-feature-settings:     "kern";
+  font-feature-settings:         "kern";
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, roboto, sans-serif;
+}
+
+.blur            { animation: blur 2s ease-in-out both; }
+.bg-gradient     { background-color: #b7b7b7; -webkit-animation: random 20s infinite; animation: random 20s infinite; transition: all 20s ease-in-out; }
+.bg-text-clip    { -webkit-text-fill-color: transparent; background-image: linear-gradient(75deg, #00DBDE 0%, #FC00FF 50%, #00DBDE 100%); -webkit-background-clip: text;background-size: 200% auto; }
+.card            { animation: fadeIn 1s ease-in-out both; }
+.lh-copy         { line-height: 1.7rem; }
+.link-inline     { border-bottom: 1px solid rgba(0,0,0,.1); padding-bottom: .1rem; text-decoration: none; }
+.shadow          { box-shadow: 0px 24px 24px rgba(0, 0, 0, .03); }
+.shadow-colored  { box-shadow: 0px 16px 24px rgba(122, 33, 130, .1); }
+.shine           { -webkit-animation: shine 5s linear infinite; }
+.spin            { -webkit-animation:spin 3s ease-in-out infinite; -moz-animation:spin 3s ease-in-out infinite; animation:spin 3s ease-in-out infinite; }
+.top--4          { top: -4rem; }
+.up              { transition: all .2s ease-in-out !important; }
+.up:hover        { transform: translateY(-3px); }
+
+
+
+/* Animations */
+
+#list .card:nth-child(2) { animation-delay: .25s; }
+#list .card:nth-child(3) { animation-delay: .5s; }
+#list .card:nth-child(4) { animation-delay: .75s; }
+#list .card:nth-child(5) { animation-delay: 1s; }
+#list .card:nth-child(6) { animation-delay: 1.25s; }
+#list .card:nth-child(7) { animation-delay: 1.5s; }
+#list .card:nth-child(8) { animation-delay: 1.75s; }
+#list .card:nth-child(9) { animation-delay: 2s; }
+#list .card:nth-child(10) { animation-delay: 2.25s; }
+#list .card:nth-child(11) { animation-delay: 2.5s; }
+#list .card:nth-child(12) { animation-delay: 2.75s; }
+#list .card:nth-child(13) { animation-delay: 3.00s; }
+#list .card:nth-child(14) { animation-delay: 3.25s; }
+#list .card:nth-child(15) { animation-delay: 3.5s; }
+#list .card:nth-child(16) { animation-delay: 3.75s; }
+#list .card:nth-child(17) { animation-delay: 4s; }
+#list .card:nth-child(18) { animation-delay: 4.25s; }
+#list .card:nth-child(19) { animation-delay: 4.5s; }
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes blur {
+    from  {
+      filter: blur(3px);
+      opacity: 0;
+      -webkit-backface-visibility: hidden;
+    }
+    to {
+      filter: blur(0px);
+      transform: none;
+      -webkit-backface-visibility: hidden;
+    }
+}
+
+@keyframes random {
+    0%  { background-color: #E7E7E7; }
+    10% { background-color: #E7DDDD; }
+    20% { background-color: #E7E2DD; }
+    30% { background-color: #E7E6DD; }
+    40% { background-color: #E1E7DD; }
+    50% { background-color: #DDE7E1; }
+    60% { background-color: #DDE3E7; }
+    70% { background-color: #DDDDE7; }
+    80% { background-color: #E4DDE7; }
+    90% { background-color: #E7DDE2; }
+    100% { background-color: #E7E7E7; }
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@-moz-keyframes spin {
+  0%   { -moz-transform:rotate(0deg);
+         -moz-transform-origin: 50% 50%; }
+  50%  { -moz-transform:rotate(45deg);
+         -moz-transform-origin: 50% 50%; }
+  100% { -moz-transform: rotate(0deg);
+         -moz-transform-origin: 50% 50%; }
+}
+
+@-webkit-keyframes spin {
+  0%   { -webkit-transform:rotate(0deg);
+         -webkit-transform-origin: 50% 50%; }
+  50%  { -webkit-transform:rotate(45deg);
+         -webkit-transform-origin: 50% 50%; }
+  100% { -webkit-transform: rotate(0deg);
+         -webkit-transform-origin: 50% 50%;
+        }
+}
+
+@keyframes spin {
+  0%   { transform:rotate(0deg);
+         transform-origin: 50% 50%; }
+  50%  { transform:rotate(45deg);
+         transform-origin: 50% 50%; }
+  100% { transform:rotate(0deg);
+         transform-origin: 50% 50%; }
+}

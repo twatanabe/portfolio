@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My great Nuxt.js project",
+  "author": "web.dev.badger@gmail.com",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "generate": "nuxt-ts generate",
+    "start": "nuxt-ts start"
+  },
+  "dependencies": {
+    "@nuxt/typescript-runtime": "^0.1.4",
+    "nuxt": "^2.0.0",
+    "nuxt-property-decorator": "^2.4.0"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "^0.2.0",
+    "@nuxtjs/tailwindcss": "^1.0.0"
+  }
+}
