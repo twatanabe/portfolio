@@ -1,26 +1,17 @@
 <template>
-  <section>
-    <div className="blur center mw9 pa4-ns pa3">
-      <div className="card items-start pr4-l pr3-m pr0 pb4 relative w-33-l w-100">
-      <div className="bg-white-30 br4 overflow-hidden shadow">
-        <div className="black-30 b bb b--black-05 f6 flex items-center justify-between ph4 pv3">
-          <span className="tracked ttu">{{title}}</span>
-            {buttonText &&
-            <div>
-              <slot>
-              </slot>
-              <!-- <Button color="white" href={href} name={buttonText}>
-                {{buttonText}}
-              </Button> -->
-            </div>}
-          </div>
-          <div className="ph4 pv3" >
-            {{children}}
+  <div class="">
+    <slot></slot>
+  </div>
+    <!-- <div class="blur center mw9 pa4-ns pa3">
+      <div class="card items-start pr4-l pr3-m pr0 pb4 relative w-33-l w-100">
+        <div class="bg-white-30 br4 overflow-hidden shadow">
+          <div class="black-30 b bb b--black-05 f6 flex items-center justify-between ph4 pv3">
+            <span class="tracked ttu">{{title}}</span>
+            <slot></slot>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </div> -->
 </template>
 
 <script lang="ts">
@@ -33,7 +24,7 @@ export default class Box extends Vue {
 </script>
 
 <style scoped>
-@import '../assets/css/tailwind.css';
+@import "../assets/css/tailwind.css";
 .box {
   background: #fff;
 }
