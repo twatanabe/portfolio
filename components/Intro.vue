@@ -20,10 +20,12 @@ export default class Intro extends Vue {
 <style scoped>
 h2 {
   font-size: 17px;
-  padding: 30px;
+  padding: 30px 30px 15px 0;
   font-weight: bold;
   border-bottom: 1px solid #e8e8e8;
-  background-color: #f9f9fa;
+  /* background-color: #f9f9fa; */
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
 }
 
 .outline {
@@ -33,7 +35,6 @@ h2 {
 }
 
 .content {
-  padding: 30px;
-  word-break: break-all;
+  padding: 30px 30px 0 0;
 }
 </style>

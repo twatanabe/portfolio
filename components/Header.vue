@@ -1,14 +1,20 @@
 <template>
   <div class="">
-    <div class="">
-      <a href="/" class="text-2xl font-mono font-bold">
+    <div class="float-left w-3/5">
+      <a href="/" class="text-2xl font-mono font-bold text-black">
         Takumi Watanabe
       </a>
     </div>
-    <div class="">
+    <div class="float-left w-1/4">
       <ul class="">
-        <li class="">
+        <li class="float-left mx-8">
           Projects
+        </li>
+        <li class="float-left mx-8">
+          Certs
+        </li>
+        <li class="float-left mx-8">
+          Contact
         </li>
       </ul>
     </div>

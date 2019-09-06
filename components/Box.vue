@@ -29,6 +29,7 @@ h2 {
   font-weight: bold;
   border-bottom: 1px solid #e8e8e8;
   background-color: #f9f9fa;
+  letter-spacing: 0.05em;
 }
 
 .content {

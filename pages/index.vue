@@ -1,20 +1,20 @@
 <template>
   <div class="flex justify-center">
     <div class="max-w-90 px-12 content-center">
-      <div class="my-12">
+      <div class="my-12 clearfix h-1 mb-20">
         <Header />
       </div>
 
       <div class="mb-12 clearfix">
         <div class="w-1/4 block float-left h-1"></div>
         <div class="w-3/4 block float-left">
-          <h1 class="font-mono text-6xl font-bold mb-16">I Am Awesome</h1>
+          <h1 class="font-mono text-6xl font-bold mb-16">Awesome</h1>
         </div>
       </div>
 
       <div class="mb-32 clearfix">
         <Intro class="h-1"></Intro>
-        <Intro title="WELCOME">
+        <Intro title="Welcome">
           <p class="mb-6">
             Hi I'm Takumi Watanabe, a full-stack architect and cloud software engineer base in California.</p>
           <p class="mb-6">
@@ -22,7 +22,7 @@
           <p class="">
             I love building solutions to solve complex problems that makes me spark creativity and multidisciplinary thoughts while helping others achieve answers.</p>
         </Intro>
-        <Intro title="EXPERIENCE">
+        <Intro title="Experience">
           <p class="mb-6">
             Currently I work with cloud platform service engineering for AI driven security application at
             <a href="https://www.cylance.com">Cylance</a>
@@ -33,7 +33,7 @@
           <p class="">
             For web app development, I enjoy Node.js, Angular2, Vue, Express, Axios, GraphQL, MongoDB, and Firebase.</p>
         </Intro>
-        <Intro title="CONTACT">
+        <Intro title="Contact">
           <p class="">
             Thanks for reading this far, will be nice if we can get know each other further. Feel free to send me a hello message to <a>hello@takumi.com</a>
           </p>
@@ -48,8 +48,23 @@
       </div>
 
       <div class="mb-32 clearfix">
-        <Card>
+        <div class="w-1/4 block float-left h-1"></div>
+        <Card title="TopTrendBooks" imageUrl="" linkUrl="">
         </Card>
+        <Card title="TopTrendGamings" imageUrl="" linkUrl="">
+        </Card>
+      </div>
+
+      <div class="clearfix">
+        <div class="w-1/4 block float-left h-1"></div>
+        <div class="w-3/4 block float-left">
+          <h1 class="font-mono text-5xl font-bold mb-16">Certifications</h1>
+        </div>
+      </div>
+
+      <div class="mb-32 clearfix">
+        <div class="">
+        </div>
       </div>
     </div>
   </div>
