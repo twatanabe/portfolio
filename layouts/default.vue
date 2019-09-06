@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="bg-gradient h-100 w-100 overflow-x-hidden">
     <nuxt />
   </div>
 </template>

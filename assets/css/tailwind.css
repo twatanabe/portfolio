@@ -1,6 +1,6 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 body {
   font-family: Interface, sans-serif;
@@ -9,10 +9,31 @@ body {
 }
 
 a {
-  color: blue;
-  font-weight: bold;
+  color: #3b92de;
+  cursor: pointer;
 }
 
 .max-w-90 {
   max-width: 90rem;
+}
+
+.bg-gradient {
+  background-color: #b7b7b7;
+  -webkit-animation: random 20s infinite;
+  animation: random 20s infinite;
+  transition: all 20s ease-in-out;
+}
+
+@keyframes random {
+  0% { background-color: #e7e7e7; }
+  10% { background-color: #e7dddd; }
+  20% { background-color: #e7e2dd; }
+  30% { background-color: #e7e6dd; }
+  40% { background-color: #e1e7dd; }
+  50% { background-color: #dde7e1; }
+  60% { background-color: #dde3e7; }
+  70% { background-color: #dddde7; }
+  80% { background-color: #e4dde7; }
+  90% { background-color: #e7dde2; }
+  100% { background-color: #e7e7e7; }
 }

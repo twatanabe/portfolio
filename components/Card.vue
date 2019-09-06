@@ -1,10 +1,10 @@
 <template>
-  <div class="w-1/4 float-left pr-8">
-    <a :href="linkUrl">
+  <div class="w-1/3 float-left pr-8 mb-12">
+    <a :href="linkUrl" target="_blank">
       <div class="previewImage">
-        <img class="container" :src="imageUrl" :alt="title"/>
+        <img class="container w-full h-56 rounded-lg" :src="imageUrl" :alt="title"/>
       </div>
-      <div class="title">
+      <div class="title my-4 text-black font-bold">
         {{title}}
       </div>
       <slot></slot>

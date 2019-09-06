@@ -38,7 +38,7 @@ h2 {
 }
 
 .outline {
-  border: 1px solid #e7e9eb;
+  /* border: 1px solid #e7e9eb; */
   border-radius: 6px;
   box-shadow: 0 0 0 1px #e7e9eb;
 }

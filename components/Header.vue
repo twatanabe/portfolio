@@ -5,16 +5,22 @@
         Takumi Watanabe
       </a>
     </div>
-    <div class="float-left w-1/4">
+    <div class="float-left w-1/3">
       <ul class="">
-        <li class="float-left mx-8">
-          Projects
+        <li class="float-left mx-6">
+          <a class="text-black">
+            Projects
+          </a>
         </li>
-        <li class="float-left mx-8">
-          Certs
+        <li class="float-left mx-6">
+          <a class="text-black">
+            Profession
+          </a>
         </li>
-        <li class="float-left mx-8">
-          Contact
+        <li class="float-left mx-6">
+          <a class="text-black">
+            Consult
+          </a>
         </li>
       </ul>
     </div>
