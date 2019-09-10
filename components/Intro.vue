@@ -1,5 +1,5 @@
 <template>
-  <div class="float-left pr-8" :class="{ 'w-1/3': w == '3', 'w-1/4': w == '4' }">
+  <div class="opacity-100 float-left pr-8" :class="{ 'w-1/3': w == '3', 'w-1/4': w == '4', 'w-1/5': w == '5', 'w-1/6': w == '6'}">
     <h2 v-if="title != ''">{{title}}</h2>
     <div class="content" :class="{ outline: outline }">
       <slot></slot>

@@ -1,26 +1,21 @@
 <template>
   <div class="">
-    <div class="float-left w-3/5">
-      <a href="/" class="text-2xl font-mono font-bold text-black">
+    <div class="w-1/5 float-left">
+      <router-link to="/" class="text-2xl font-mono font-bold text-black">
         Takumi Watanabe
-      </a>
+      </router-link>
     </div>
-    <div class="float-left w-1/3">
+    <div class="w-2/5 float-right text-right">
       <ul class="">
-        <li class="float-left mx-6">
-          <a class="text-black">
+        <li class="float-left mx-4">
+          <router-link to="/projects" class="text-black">
             Projects
-          </a>
+          </router-link>
         </li>
-        <li class="float-left mx-6">
-          <a class="text-black">
-            Profession
-          </a>
-        </li>
-        <li class="float-left mx-6">
-          <a class="text-black">
+        <li class="float-left mx-4">
+          <router-link to="/consult" class="text-black">
             Consult
-          </a>
+          </router-link>
         </li>
       </ul>
     </div>

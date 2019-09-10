@@ -2,15 +2,24 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-body {
+html, body, #__nuxt, #__layout{
   font-family: Interface, sans-serif;
   font-size: 15px;
-  background-color: #f7f8f8;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 a {
   color: #3b92de;
   cursor: pointer;
+}
+
+a:hover {
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
+  color: gray;
 }
 
 .max-w-90 {
