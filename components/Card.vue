@@ -1,14 +1,15 @@
 <template>
-  <div class="w-1/3 float-left pr-8 mb-12">
+  <div class="lg:w-1/3 sm:w-1/2 float-left sm:pr-8 mb-12">
     <a :href="linkUrl" target="_blank">
       <div class="previewImage">
         <img class="container w-full h-56 rounded-lg" :src="imageUrl" :alt="title"/>
       </div>
+    </a>
       <div class="title my-4 text-black font-bold">
-        {{title}}
+        <p>{{title}}</p>
       </div>
       <slot></slot>
-    </a>
+      <a :href="linkUrl" target="_blank">Visit Site →</a>
   </div>
 </template>
 

@@ -47,5 +47,5 @@ import { Vue, Component, Prop } from "vue-property-decorator";
 @Component({
   components: {}
 })
-export default class About extends Vue {}
+export default class Projects extends Vue {}
 </script>

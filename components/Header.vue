@@ -1,13 +1,13 @@
 <template>
-  <div class="">
-    <div class="w-1/5 float-left">
-      <router-link to="/" class="text-2xl font-mono font-bold text-black">
+  <div class="pt-16 clearfix pb-32 max-w-90">
+    <div class="w-2/5 float-left">
+      <router-link to="/" class="title">
         Takumi Watanabe
       </router-link>
     </div>
-    <div class="w-2/5 float-right text-right">
+    <div class="float-right text-right pt-2">
       <ul class="">
-        <li class="float-left mx-4">
+        <li class="float-left mx-6">
           <router-link to="/projects" class="text-black">
             Projects
           </router-link>
@@ -31,5 +31,8 @@ export default class Box extends Vue {
 }
 </script>
 
-<style scoped>
+<style scoped lang="postcss">
+.title {
+  @apply text-2xl font-mono font-bold text-black no-underline;
+}
 </style>

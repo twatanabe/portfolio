@@ -1,14 +1,23 @@
 <template>
   <div class>
     <div class="clearfix">
-      <div class="w-1/4 block float-left h-1"></div>
+      <div class="w-1/4 block float-left"></div>
       <div class="w-3/4 block float-left">
         <!-- <h1 class="font-mono text-6xl font-bold mb-16">Code to Resolve.</h1> -->
       </div>
     </div>
 
     <div class="clearfix section mb-24">
-      <Intro class="h-1"></Intro>
+      <Intro class="lg:mt-16">
+        <div class="lg:pl-8">
+        <span class="sm-gray block">Exciting project in mind?</span>
+        <span class="sm-gray mb-5 block">Would my skillset aid you?</span>
+
+        <span class="sm-gray block"><router-link to="/contact">Let's get in touch.</router-link></span>
+        </div>
+      </Intro>
+
+
       <Intro title="Welcome">
         <p
           class="mb-6"
@@ -39,20 +48,20 @@
       <Intro title="Contact">
         <p class>
           Thanks for getting to know me, it will be nice if you can also share about yourself. Feel free to send me a hello message to
-          <a>hello@takumiwatanabe.com</a>
+          <a class="break-words">hello@takumiwatanabe.me</a>
         </p>
       </Intro>
     </div>
 
     <div class="clearfix">
-      <div class="w-1/4 block float-left h-1"></div>
+      <div class="w-1/4 float-left h-1 lg:block hidden"></div>
       <div class="w-3/4 block float-left">
-        <h1 class="font-mono text-5xl font-bold mb-16">Projects.</h1>
+        <h1 class="header">Projects.</h1>
       </div>
     </div>
 
     <div class="mb-24 clearfix">
-      <div class="w-1/4 block float-left h-1"></div>
+      <div class="w-1/4 float-left h-1 lg:block hidden"></div>
       <Card
         title="DevUp"
         :imageUrl="require('@/assets/devup.png')"
@@ -60,7 +69,6 @@
         target="_blank"
       >
         <p class="text-black mb-4">Community driven project gathering site for developers 🙏</p>
-        <p>Visit Site →</p>
       </Card>
       <Card
         title="TopTrendBooks"
@@ -69,9 +77,8 @@
         target="_blank"
       >
         <p class="text-black mb-4">Rank over 15,000 books everyday based on Reddit 📚</p>
-        <p>Visit Site →</p>
       </Card>
-      <div class="w-1/4 block float-left h-1"></div>
+      <div class="w-1/4 float-left h-1 lg:block hidden"></div>
       <Card
         title="Reverse Proxy Docker Monitorstats"
         :imageUrl="require('@/assets/grafana2.png')"
@@ -79,7 +86,6 @@
         target="_blank"
       >
         <p class="text-black mb-4"></p>
-        <p>Visit Site →</p>
       </Card>
       <!-- <div class="w-1/4 block float-left h-1"></div>
         <Card title="TopTrendBooks" :imageUrl="require('@/assets/toptrendbooks.png')" linkUrl="https://toptrendbooks.com" target="_blank">
@@ -88,100 +94,100 @@
     </div>
 
     <div class="clearfix">
-      <div class="w-1/4 block float-left h-1"></div>
+      <div class="w-1/4 float-left h-1 lg:block hidden"></div>
       <div class="w-3/4 block float-left">
-        <h1 class="font-mono text-5xl font-bold mb-16">Experience and Certifications.</h1>
+        <h1 class="header">Experience and Certifications.</h1>
       </div>
     </div>
 
     <div class="clearfix section mb-24">
-      <Intro class="h-1"></Intro>
-        <Intro w="3">
-          <p class="sub-header">Current</p>
-          <p class="mb-6">
-            Building microservices at
-            <a href="cylance.com" target="_blank">Cylance</a>
-          </p>
-          <p class="mb-6">
-            Making book ranking site called
-            <a
-              href="https://toptrendbooks.com"
-              target="_blank"
-            >TopTrendBooks</a>
-          </p>
+      <Intro class="lg:block hidden"></Intro>
+      <Intro w="3">
+        <p class="sub-header">Current</p>
+        <p class="mb-6">
+          Building microservices at
+          <a href="cylance.com" target="_blank">Cylance</a>
+        </p>
+        <p class="mb-6">
+          Making book ranking site called
+          <a
+            href="https://toptrendbooks.com"
+            target="_blank"
+          >TopTrendBooks</a>
+        </p>
 
-          <p class="sub-header">Previous</p>
-          <p class="mb-6">
-            Consult enterprise PaaS/SaaS at
-            <a href="https://www.technossus.com/" target="_blank">
-              Technossus
-              <span class="text-gray-600 block text-sm">2017-2019</span>
-            </a>
-          </p>
-          <p class="mb-6">
-            Architect lab applications for
-            <a href="https://www.bio-rad.com/" target="_blank">Bio-Rad</a>
+        <p class="sub-header">Previous</p>
+        <p class="mb-6">
+          Consult enterprise PaaS/SaaS at
+          <a href="https://www.technossus.com/" target="_blank">
+            Technossus
             <span class="text-gray-600 block text-sm">2017-2019</span>
-          </p>
-          <p class="mb-6">
-            Deploy medical software at
-            <a
-              href="https://www.kowa-usa.com/"
-              target="_blank"
-            >Kowa American Corporation</a>
-            <span class="text-gray-600 block text-sm">2013-2017</span>
-          </p>
-          <p class="mb-6">
-            Design web application at
-            <a>Rapid Consulting</a>
-            <span class="text-gray-600 block text-sm">2012-2013</span>
-          </p>
-        </Intro>
-        <Intro w="3">
-          <p class="sub-header">Certifications</p>
-          <p class="mb-6">
-            <a
-              href="https://www.microsoft.com/en-us/learning/azure-solutions-architect.aspx"
-              target="_blank"
-            >Microsoft Certified Azure: Solutions Architect Exprt</a>
-            <span class="text-gray-600 block text-sm">Credential ID H144-7459</span>
-          </p>
-          <p class="mb-6">
-            <a
-              href="https://www.microsoft.com/en-us/learning/azure-administrator.aspx"
-              target="_blank"
-            >Microsoft Certified Azure: Administrator Associate</a>
-            <span class="text-gray-600 block text-sm">Credential ID H048-9937</span>
-          </p>
-          <p class="mb-6">
-            <a
-              href="https://www.microsoft.com/en-us/learning/azure-developer.aspx"
-              target="_blank"
-            >Microsoft Certified Azure: Developer Associate</a>
-            <span class="text-gray-600 block text-sm">Credential ID H037-1939</span>
-          </p>
-          <p class="mb-6">
-            <a
-              href="https://www.microsoft.com/en-us/learning/mcse-cloud-platform-infrastructure.aspx"
-              target="_blank"
-            >Microsoft Certified Solutions Expert (MCSE) - Cloud Platform and Infrastructure</a>
-            <span class="text-gray-600 block text-sm">Credential ID H013-8312</span>
-          </p>
-          <p class="mb-6">
-            <a
-              href="https://www.microsoft.com/en-us/learning/mcsa-cloud-platform-certification.aspx"
-              target="_blank"
-            >Microsoft Certified Solutions Associate (MCSA) - Cloud Platform</a>
-            <span class="text-gray-600 block text-sm">Credential ID H013-7715</span>
-          </p>
-          <p class="mb-6">
-            <a
-              href="https://www.microsoft.com/en-us/learning/microsoft-certified-professional.aspx"
-              target="_blank"
-            >Microsoft Certified Professional</a>
-            <span class="text-gray-600 block text-sm">Credential ID H011-9072</span>
-          </p>
-        </Intro>
+          </a>
+        </p>
+        <p class="mb-6">
+          Architect lab applications for
+          <a href="https://www.bio-rad.com/" target="_blank">Bio-Rad</a>
+          <span class="text-gray-600 block text-sm">2017-2019</span>
+        </p>
+        <p class="mb-6">
+          Deploy medical software at
+          <a
+            href="https://www.kowa-usa.com/"
+            target="_blank"
+          >Kowa American Corporation</a>
+          <span class="text-gray-600 block text-sm">2013-2017</span>
+        </p>
+        <p class="mb-6">
+          Design web application at
+          <a>Rapid Consulting</a>
+          <span class="text-gray-600 block text-sm">2012-2013</span>
+        </p>
+      </Intro>
+      <Intro w="3">
+        <p class="sub-header">Certifications</p>
+        <p class="mb-6">
+          <a
+            href="https://www.microsoft.com/en-us/learning/azure-solutions-architect.aspx"
+            target="_blank"
+          >Microsoft Certified Azure: Solutions Architect Exprt</a>
+          <span class="text-gray-600 block text-sm">Credential ID H144-7459</span>
+        </p>
+        <p class="mb-6">
+          <a
+            href="https://www.microsoft.com/en-us/learning/azure-administrator.aspx"
+            target="_blank"
+          >Microsoft Certified Azure: Administrator Associate</a>
+          <span class="text-gray-600 block text-sm">Credential ID H048-9937</span>
+        </p>
+        <p class="mb-6">
+          <a
+            href="https://www.microsoft.com/en-us/learning/azure-developer.aspx"
+            target="_blank"
+          >Microsoft Certified Azure: Developer Associate</a>
+          <span class="text-gray-600 block text-sm">Credential ID H037-1939</span>
+        </p>
+        <p class="mb-6">
+          <a
+            href="https://www.microsoft.com/en-us/learning/mcse-cloud-platform-infrastructure.aspx"
+            target="_blank"
+          >Microsoft Certified Solutions Expert (MCSE) - Cloud Platform and Infrastructure</a>
+          <span class="text-gray-600 block text-sm">Credential ID H013-8312</span>
+        </p>
+        <p class="mb-6">
+          <a
+            href="https://www.microsoft.com/en-us/learning/mcsa-cloud-platform-certification.aspx"
+            target="_blank"
+          >Microsoft Certified Solutions Associate (MCSA) - Cloud Platform</a>
+          <span class="text-gray-600 block text-sm">Credential ID H013-7715</span>
+        </p>
+        <p class="mb-6">
+          <a
+            href="https://www.microsoft.com/en-us/learning/microsoft-certified-professional.aspx"
+            target="_blank"
+          >Microsoft Certified Professional</a>
+          <span class="text-gray-600 block text-sm">Credential ID H011-9072</span>
+        </p>
+      </Intro>
     </div>
 
     <Contact />
@@ -212,6 +218,14 @@ export default class Home extends Vue {}
 <style lang="postcss">
 .sm-gray {
   @apply text-gray-600 text-xs;
+}
+.header {
+  @apply font-mono text-3xl font-bold mb-16;
+}
+@screen lg {
+  .header {
+    @apply text-5xl;
+  }
 }
 .sub-header {
   @apply text-xl mb-6 text-gray-700 font-semibold;

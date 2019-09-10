@@ -1,9 +1,7 @@
 <template>
   <div class="bg-gradient h-full w-full overflow-x-hidden">
-    <div class="max-w-90 px-12 mx-56">
-      <div class="mt-16 clearfix h-1 mb-32 max-w-90">
-        <Header />
-      </div>
+    <div class="max-w-90 px-12 center">
+      <Header />
       <nuxt />
     </div>
   </div>
