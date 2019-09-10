@@ -223,7 +223,8 @@ export default class Home extends Vue {}
   @apply text-gray-600 text-xs;
 }
 .header {
-  @apply font-mono text-3xl font-bold mb-16;
+  @apply font-mono text-3xl font-bold mb-16 tracking-tight;
+  font-family: Interface,Avenir Next,sans-serif;
 }
 @screen lg {
   .header {
@@ -239,13 +240,15 @@ export default class Home extends Vue {}
   background-color: hsla(0, 0%, 100%, 0.3);
 }
 
+
+.buffer {
+  @apply block;
+}
+
 @screen lg {
   .buffer {
     @apply hidden w-1/4 float-left h-1;
   }
 }
 
-.buffer {
-  @apply block;
-}
 </style>
