@@ -10,13 +10,14 @@
     <div class="clearfix section mb-24">
       <Intro class="lg:mt-16">
         <div class="lg:pl-8">
-        <span class="sm-gray block">Exciting project in mind?</span>
-        <span class="sm-gray mb-5 block">Would my skillset aid you?</span>
+          <span class="sm-gray block">Exciting project in mind?</span>
+          <span class="sm-gray mb-5 block">Would my skillset aid you?</span>
 
-        <span class="sm-gray block"><router-link to="/contact">Let's get in touch.</router-link></span>
+          <span class="sm-gray block">
+            <router-link to="/contact">Let's get in touch.</router-link>
+          </span>
         </div>
       </Intro>
-
 
       <Intro title="Welcome">
         <p
@@ -48,20 +49,22 @@
       <Intro title="Contact">
         <p class>
           Thanks for getting to know me, it will be nice if you can also share about yourself. Feel free to send me a hello message to
-          <a class="break-words">hello@takumiwatanabe.me</a>
+          <a
+            class="break-words"
+          >hello@takumiwatanabe.me</a>
         </p>
       </Intro>
     </div>
 
     <div class="clearfix">
-      <div class="w-1/4 float-left h-1 lg:block hidden"></div>
+      <div class="buffer"></div>
       <div class="w-3/4 block float-left">
         <h1 class="header">Projects.</h1>
       </div>
     </div>
 
     <div class="mb-24 clearfix">
-      <div class="w-1/4 float-left h-1 lg:block hidden"></div>
+      <div class="buffer"></div>
       <Card
         title="DevUp"
         :imageUrl="require('@/assets/devup.png')"
@@ -94,7 +97,7 @@
     </div>
 
     <div class="clearfix">
-      <div class="w-1/4 float-left h-1 lg:block hidden"></div>
+      <div class="buffer"></div>
       <div class="w-3/4 block float-left">
         <h1 class="header">Experience and Certifications.</h1>
       </div>
@@ -234,5 +237,15 @@ export default class Home extends Vue {}
   @apply pb-5 rounded-lg;
   box-shadow: 0 24px 24px rgba(0, 0, 0, 0.03);
   background-color: hsla(0, 0%, 100%, 0.3);
+}
+
+@screen lg {
+  .buffer {
+    @apply hidden w-1/4 float-left h-1;
+  }
+}
+
+.buffer {
+  @apply block;
 }
 </style>

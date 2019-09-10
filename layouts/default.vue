@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gradient h-full w-full overflow-x-hidden">
-    <div class="max-w-90 px-12 center">
+    <div class="max-w-90 px-6 lg:px-12 center">
       <Header />
       <nuxt />
     </div>

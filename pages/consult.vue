@@ -1,14 +1,14 @@
 <template>
   <div>
     <div class="clearfix">
-      <div class="w-1/4 block float-left h-1"></div>
+      <div class="buffer"></div>
       <div class="w-3/4 block float-left">
-        <h1 class="font-mono text-6xl font-bold mb-16">Knowledge Base.</h1>
+        <h1 class="header">Knowledge Base.</h1>
       </div>
     </div>
 
     <div class="mb-24 clearfix">
-      <Intro></Intro>
+      <Intro class="hidden lg:block"></Intro>
       <div class="section clearfix">
         <Intro w="6">
           <p class="sub-header">Frontend</p>
@@ -55,7 +55,7 @@
             <li>PostgreSQL</li>
           </ul>
         </Intro>
-        <Intro></Intro>
+        <Intro class="hidden lg:block"></Intro>
         <Intro w="6">
           <p class="sub-header">Infrastructure</p>
           <ul>
@@ -125,4 +125,7 @@ li {
   @apply text-gray-600;
 }
 
+Intro {
+  height: 170px;
+}
 </style>
