@@ -6,12 +6,15 @@
     <div class="sm:float-right text-right pt-2">
       <ul class="nav-item">
         <li class="float-left mr-6">
+          <router-link class="nav-link" exact to="/blog">Blog</router-link>
+        </li>
+        <li class="float-left mr-6">
           <router-link class="nav-link" exact to="/projects">Projects</router-link>
         </li>
-        <li class="float-left mx-4">
+        <li class="float-left mr-6">
           <router-link class="nav-link" exact to="/consult">Consult</router-link>
         </li>
-        <li class="float-left mx-4">
+        <li class="float-left mr-6">
           <router-link class="nav-link" exact to="/contact">Contact</router-link>
         </li>
       </ul>

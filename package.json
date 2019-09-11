@@ -12,6 +12,11 @@
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^0.1.4",
+    "@nuxtjs/dotenv": "^1.4.0",
+    "contentful": "^7.9.1",
+    "dotenv": "^8.1.0",
+    "marked": "^0.7.0",
+    "moment": "^2.24.0",
     "nuxt": "^2.0.0",
     "nuxt-property-decorator": "^2.4.0"
   },

@@ -1,6 +1,10 @@
 // tsconfig.json
 {
   "compilerOptions": {
+    "noImplicitAny": false,
+    "strictPropertyInitialization": false,
+    "strictNullChecks": false,
+    "strictFunctionTypes": false,
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
@@ -29,6 +33,12 @@
       "@nuxt/types"
     ]
   },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.Vue",
+    "nuxt.config.ts", "@nuxtjs/axios"
+  ],
   "exclude": [
     "node_modules"
   ]

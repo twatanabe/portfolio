@@ -121,7 +121,7 @@ li {
 }
 
 .skill-box {
-  @apply w-1/2 pb-4 px-4 pt-6;
+  @apply w-1/2 pb-4 pr-8 pt-6;
 }
 
 @screen sm {

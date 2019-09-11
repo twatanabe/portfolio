@@ -51,7 +51,7 @@ html {
   }
   .horizontal-25 {
     left: 25%;
-    padding-left: 18px;
+    padding-left: 20px;
     opacity: 0.4
   }
 }
