@@ -26,7 +26,7 @@ export default class Intro extends Vue {
 
 @screen lg {
   .outline {
-    @apply mb-0 lb-0;
+    @apply mb-0 pb-0;
   }
 }
 
