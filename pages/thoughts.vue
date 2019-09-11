@@ -6,7 +6,7 @@
         <h1 class="header">Thoughts.</h1>
       </div>
     </div>
-    <div class="wrap bg">
+    <div class="wrap">
       <div class="buffer"></div>
       <ul class="article-list">
         <li v-for="(article, index) in articles" :key="index">
@@ -61,7 +61,7 @@ export default class Thoughts extends Vue {
   padding: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min-content, 300px));
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
   grid-gap: 4vmin;
 }
 

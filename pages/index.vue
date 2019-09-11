@@ -15,8 +15,8 @@
     <div class="clearfix section bg">
       <Intro class="lg:mt-16">
         <div class="lg:pl-8">
-          <span class="sm-gray block">Exciting project in mind?</span>
-          <span class="sm-gray mb-5 block">Would my skillset aid you?</span>
+          <span class="sm-gray block">Have an exciting project in mind?</span>
+          <span class="sm-gray mb-5 block">Would my <router-link to="/consult">skillsets</router-link> help you?</span>
 
           <span class="sm-gray block">
             <router-link to="/contact">Let's get in touch.</router-link>
@@ -26,7 +26,7 @@
 
       <Intro title="Welcome">
         <p class="mb-6"
-        >Hi I'm Takumi Watanabe, a full-stack software engineer and cloud architect based in California.</p>
+        >Hello! My name is Takumi Watanabe, a full-stack engineer and cloud architect based in California.</p>
         <p class="mb-6"
         >I create enterprise scale web application for various industries including Security, Laboratory, and Medical.</p>
         <p class="mb-6"

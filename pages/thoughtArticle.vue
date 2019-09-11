@@ -1,5 +1,13 @@
 <template>
   <div>
+
+    <div class="clearfix">
+      <div class="buffer"></div>
+      <div class="w-3/4 block float-left">
+        <h1 class="header">{{article.title}}</h1>
+      </div>
+    </div>
+
     <div class="clearfix section">
       <div class="buffer"></div>
       <div class="primary lg:w-3/4 float-left">
@@ -14,7 +22,6 @@
           </div>
         </div>
         <div class="article">
-          <h1>{{article.title}}</h1>
           <p style="display: block">{{convertToDate(article.publishDate)}}</p>
           <hr class="header-border"/>
 
@@ -57,15 +64,15 @@ export default class ThoughtArticle extends Vue {
   @Meta
   metaInfo() {
     return {
-      title: `${this.article.title} Best Books`,
+      title: `${this.article.title}`,
       meta: [
         {
           hid: "description",
           name: "description",
-          content: `Best books of ${this.article.title}`
+          content: `${this.article.title}`
         },
         { hid: "og-title", property: "og:title", content: this.article.title },
-        { hid: "og-type", property: "og:type", content: "book-top-10" },
+        { hid: "og-type", property: "og:type", content: "article" },
         {
           hid: "og-url",
           property: "og:url",
@@ -111,25 +118,6 @@ export default class ThoughtArticle extends Vue {
 .article >>> .header-border {
   border-color: gray;
 }
-
-.article >>> .social {
-  display: inline-block;
-  margin-top: 2rem;
-  margin-right: 3rem;
-}
-.article >>> .social.mobile {
-  margin-top: 2rem;
-  margin-right: 1rem;
-}
-
-.article >>> .social-icon {
-  width: 40px;
-}
-
-.article >>> .facebook-share-button {
-  margin-right: 10px;
-}
-
 .article {
   text-align: left;
   padding: 1.5rem 0;
@@ -162,10 +150,6 @@ export default class ThoughtArticle extends Vue {
   /* width: 40% !important; */
   margin-bottom: -5px;
 }
-.article >>> .book-title {
-  text-align: left;
-}
-
 .article >>> img {
   width: 100%;
 }
