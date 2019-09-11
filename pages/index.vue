@@ -1,5 +1,9 @@
 <template>
   <div class>
+    <div class="float-left w-1/4 h-full">
+      <div class="border-l-2 border-teal-900 h-full"></div>
+    </div>
+
     <div class="clearfix lg:mb-16"></div>
     <!-- <div class="clearfix">
       <div class="w-1/4 block float-left"></div>
@@ -47,9 +51,7 @@
       <Intro title="Contact">
         <p class>
           Thanks for getting to know me, it will be nice if you can also share about yourself. Feel free to send me a hello message to
-          <a
-            class="break-words"
-          >hello@takumiwatanabe.me</a>
+          <a class="break-words" href="mailto: hi@takumiwatanabe.me">hi@takumiwatanabe.me</a>
         </p>
       </Intro>
     </div>
@@ -179,7 +181,7 @@ export default class Home extends Vue {}
 }
 .header {
   @apply font-mono text-3xl mb-8 font-bold tracking-tight;
-  font-family: Interface,Avenir Next,sans-serif;
+  font-family: Interface, Avenir Next, sans-serif;
 }
 .sub-header {
   @apply text-xl mb-6 text-gray-700 font-semibold;

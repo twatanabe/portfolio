@@ -44,11 +44,12 @@ export default class Card extends Vue {
 @screen lg {
   .card {
     /* @apply w-5/12; */
-    width: 30rem
+    width: 36rem
   }
 
   .img-box {
-    height: 250px;
+    height: 300px;
+    /* height: 14rem; */
   }
 }
 

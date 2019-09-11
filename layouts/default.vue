@@ -1,11 +1,15 @@
 <template>
   <div class="bg-gradient h-full w-full overflow-x-hidden">
-    <div class="max-w-90 px-6 lg:px-12 center">
+    <div class="clearfix w-100 vh-100 horizontal-25 fixed">
+      <div class="float-left w-1/4 h-screen">
+        <div class="vertical-border"></div>
+      </div>
+    </div>
+
+    <div class="px-6 lg:px-12 center">
       <Header />
 
-      <transition
-        name="fade"
-        mode="out-in">
+      <transition name="fade" mode="out-in">
         <nuxt />
       </transition>
 
@@ -28,7 +32,7 @@ import Footer from "~/components/Footer.vue";
 export default class Default extends Vue {}
 </script>
 
-<style>
+<style lang="postcss">
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -39,5 +43,16 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+
+@screen lg {
+  .vertical-border {
+    @apply border-l border-gray-400 h-screen
+  }
+  .horizontal-25 {
+    left: 25%;
+    padding-left: 18px;
+    opacity: 0.4
+  }
 }
 </style>

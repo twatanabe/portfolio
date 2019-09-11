@@ -1,7 +1,7 @@
 <template>
   <div class="mb-10 clearfix">
     <p>phone: 1-424-999-5344</p>
-    <p>email: hello@takumiwatanabe.com</p>
+    <p>email: hi@takumiwatanabe.com</p>
   </div>
 </template>
 
