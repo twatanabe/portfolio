@@ -1,7 +1,7 @@
 <template>
-  <div class="opacity-100 float-left md:pr-8 px-4 sm:px-8 lg:pl-0 mb-4 lg:mb-0" :class="{ 'lg:w-1/3': w == '3', 'lg:w-1/4': w == '4', 'lg:w-1/5': w == '5', 'lg:w-1/6': w == '6'}">
+  <div class="outline" :class="{ 'lg:w-1/3': w == '3', 'lg:w-1/4': w == '4', 'lg:w-1/5': w == '5', 'lg:w-1/6': w == '6'}">
     <h2 v-if="title != ''">{{title}}</h2>
-    <div class="content" :class="{ outline: outline }">
+    <div class="content">
       <slot></slot>
     </div>
   </div>
@@ -18,6 +18,32 @@ export default class Intro extends Vue {
 }
 </script>
 
+<style lang="postcss">
+
+.outline {
+  @apply opacity-100 float-left px-4 mb-4;
+}
+
+@screen lg {
+  .outline {
+    @apply mb-0 lb-0;
+  }
+}
+
+@screen md {
+  .outline {
+    @apply pr-8;
+  }
+}
+
+@screen sm {
+  .outline {
+    @apply px-8;
+  }
+}
+
+</style>
+
 <style scoped>
 h2 {
   font-size: 17px;
@@ -28,12 +54,6 @@ h2 {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: gray;
-}
-
-.outline {
-  border: 1px solid #e7e9eb;
-  border-radius: 16px;
-  box-shadow: 0 0 0 1px #e7e9eb;
 }
 
 .content {

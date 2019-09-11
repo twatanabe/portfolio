@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-16 clearfix pb-32 max-w-90">
+  <div class="pt-16 clearfix lg:pb-32 pb-12 max-w-90">
     <div class="w-2/5 float-left">
       <router-link to="/" class="title">
         Takumi Watanabe
@@ -26,7 +26,7 @@
 import { Vue, Component, Prop } from "vue-property-decorator";
 
 @Component({})
-export default class Box extends Vue {
+export default class Header extends Vue {
   @Prop() title!: string;
 }
 </script>

@@ -1,13 +1,14 @@
 <template>
   <div class>
-    <div class="clearfix">
+    <div class="clearfix lg:mb-16"></div>
+    <!-- <div class="clearfix">
       <div class="w-1/4 block float-left"></div>
       <div class="w-3/4 block float-left">
-        <!-- <h1 class="font-mono text-6xl font-bold mb-16">Code to Resolve.</h1> -->
+        <h1 class="font-mono text-6xl font-bold mb-16">Code to Resolve.</h1>
       </div>
-    </div>
+    </div> -->
 
-    <div class="clearfix section mb-24">
+    <div class="clearfix section ">
       <Intro class="lg:mt-16">
         <div class="lg:pl-8">
           <span class="sm-gray block">Exciting project in mind?</span>
@@ -63,7 +64,7 @@
       </div>
     </div>
 
-    <div class="mb-24 clearfix">
+    <div class="clearfix">
       <div class="buffer"></div>
       <Card
         title="DevUp"
@@ -71,7 +72,7 @@
         linkUrl="https://devup-staging.netlify.com"
         target="_blank"
       >
-        <p class="text-black mb-4">Community driven project gathering site for developers 🙏</p>
+        <p class="text-black mb-4">Community driven project gathering site for developers.</p>
       </Card>
       <Card
         title="TopTrendBooks"
@@ -122,10 +123,8 @@
         <p class="sub-header">Previous</p>
         <p class="mb-6">
           Consult enterprise PaaS/SaaS at
-          <a href="https://www.technossus.com/" target="_blank">
-            Technossus
-            <span class="text-gray-600 block text-sm">2017-2019</span>
-          </a>
+          <a href="https://www.technossus.com/" target="_blank">Technossus</a>
+          <span class="text-gray-600 block text-sm">2017-2019</span>
         </p>
         <p class="mb-6">
           Architect lab applications for
@@ -195,7 +194,7 @@
 
     <Contact />
 
-    <div class="mb-20 clearfix">
+    <div class="mb-10 clearfix">
       <!-- <p class="">Contact</p> -->
       <p class>email: hello@takumiwatanabe.com</p>
     </div>
@@ -223,31 +222,33 @@ export default class Home extends Vue {}
   @apply text-gray-600 text-xs;
 }
 .header {
-  @apply font-mono text-3xl font-bold mb-16 tracking-tight;
+  @apply font-mono text-3xl mb-8 font-bold tracking-tight;
   font-family: Interface,Avenir Next,sans-serif;
-}
-@screen lg {
-  .header {
-    @apply text-5xl;
-  }
 }
 .sub-header {
   @apply text-xl mb-6 text-gray-700 font-semibold;
+  font-family: Interface,Avenir Next,sans-serif;
 }
 .section {
-  @apply pb-5 rounded-lg;
+  @apply pb-5 rounded-lg mb-20;
   box-shadow: 0 24px 24px rgba(0, 0, 0, 0.03);
   background-color: hsla(0, 0%, 100%, 0.3);
 }
-
-
 .buffer {
-  @apply block;
+  @apply hidden;
 }
 
 @screen lg {
+  .header {
+    @apply text-5xl mb-16 ;
+  }
+
   .buffer {
-    @apply hidden w-1/4 float-left h-1;
+    @apply block w-1/4 float-left h-1;
+  }
+
+  .section {
+    @apply mb-24
   }
 }
 
