@@ -8,7 +8,7 @@ export class ContentfulAPI {
   spaceId: string = process.env.CTF_SPACE_ID;
   accessToken: string = process.env.CTF_CDA_ACCESS_TOKEN;
   mgmtAccessToken: string = process.env.CTF_MGMT_ACCESS_TOKEN;
-  contentTypeId: string = "blogPost";
+  contentTypeId: string = "thoughtPost";
 
   constructor() {
     const config = {
@@ -23,7 +23,7 @@ export class ContentfulAPI {
   async getArticles() {
     let articles = new Array<Article>();
 
-    const query = { content_type: "blogPost", order: "-fields.publishDate" };
+    const query = { content_type: this.contentTypeId, order: "-fields.publishDate" };
 
     const response = await this.client.getEntries(query);
     response.items.forEach(entry => {
@@ -46,7 +46,7 @@ export class ContentfulAPI {
     let article = new Article();
 
     const query = {
-      content_type: "blogPost",
+      content_type: this.contentTypeId,
       "fields.slug[in]": articleSlug
     };
 

@@ -39,8 +39,6 @@ export default class Blog extends Vue {
   @Meta
   metaInfo() {
     return {
-      //TODO:
-      // title: 'Book Detail',
     }
   }
 
@@ -50,15 +48,25 @@ export default class Blog extends Vue {
 }
 </script>
 
-<style scoped>
+<style scoped lang="postcss">
+
 .preview {
   padding-bottom: 1rem;
 }
 .previewTitle {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
+
+@screen sm {
+  .previewTitle {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
 .previewImage {
   max-height: 200px;
   overflow: hidden;
@@ -67,16 +75,5 @@ export default class Blog extends Vue {
 }
 .previewDate {
   text-align: right;
-}
-
-.tag {
-  color: #a0a0a0;
-  text-decoration: none;
-  display: inline-block;
-  padding: 0.33333rem 0.5rem;
-  line-height: 1;
-  border-radius: 2px;
-  border: 1px solid #a0a0a0;
-  margin-right: 0.5em;
 }
 </style>

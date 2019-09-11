@@ -5,16 +5,16 @@
     </div>
     <div class="sm:float-right text-right sm:pt-2 pt-16">
       <ul class="nav-item">
-        <li class="float-left mr-6">
+        <li class="nav">
           <router-link class="nav-link" exact to="/thoughts">Thoughts</router-link>
         </li>
-        <li class="float-left mr-6">
+        <li class="nav">
           <router-link class="nav-link" exact to="/projects">Projects</router-link>
         </li>
-        <li class="float-left mr-6">
+        <li class="nav">
           <router-link class="nav-link" exact to="/consult">Consult</router-link>
         </li>
-        <li class="float-left mr-6">
+        <li class="nav">
           <router-link class="nav-link" exact to="/contact">Contact</router-link>
         </li>
       </ul>
@@ -43,6 +43,10 @@ export default class Header extends Vue {}
 .title {
   @apply text-2xl font-mono font-bold text-black no-underline;
   font-family: Interface, Avenir Next, sans-serif;
+}
+
+.nav {
+  @apply float-left mr-6 mb-2;
 }
 
 .nav-item a.nuxt-link-active {

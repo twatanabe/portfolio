@@ -13,12 +13,10 @@
             >-->
           </div>
         </div>
-        <div class="section">
-          <div class="article">
-            <h1>{{article.title}}</h1>
-            <p style="display: block">{{convertToDate(article.publishDate)}}</p>
-          </div>
-          <hr />
+        <div class="article">
+          <h1>{{article.title}}</h1>
+          <p style="display: block">{{convertToDate(article.publishDate)}}</p>
+          <hr class="header-border"/>
 
           <div v-if="markdown.length != 0" v-html="markdown" />
         </div>
@@ -98,47 +96,63 @@ export default class ThoughtArticle extends Vue {
 </script>
 
 <style scoped>
-article >>> .social {
+.article >>> p {
+  margin: 1rem 0;
+}
+
+.article >>> h1 {
+  font-size: 1.5rem;
+}
+.article >>> h2 a {
+  font-size: 1.5rem !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
+}
+.article >>> .header-border {
+  border-color: gray;
+}
+
+.article >>> .social {
   display: inline-block;
   margin-top: 2rem;
   margin-right: 3rem;
 }
-article >>> .social.mobile {
+.article >>> .social.mobile {
   margin-top: 2rem;
   margin-right: 1rem;
 }
 
-article >>> .social-icon {
+.article >>> .social-icon {
   width: 40px;
 }
 
-article >>> .facebook-share-button {
+.article >>> .facebook-share-button {
   margin-right: 10px;
 }
 
-article {
+.article {
   text-align: left;
-  padding-bottom: 20px;
+  padding: 1.5rem 0;
 }
-article >>> ul {
+.article >>> ul {
   list-style: disc inside;
   margin-bottom: 1rem;
 }
-article >>> ul li {
+.article >>> ul li {
   margin-bottom: 1rem;
   text-align: left;
 }
-article >>> ul li a {
+.article >>> ul li a {
   margin-bottom: 1rem;
 }
-article >>> ol li {
+.article >>> ol li {
   margin-bottom: 1rem;
   text-align: left;
 }
-article >>> a {
+.article >>> a {
   color: #4a4a4a;
 }
-article >>> a img {
+.article >>> a img {
   max-width: 300px;
   /* width: 150px; */
   padding-bottom: 10px;
@@ -148,11 +162,11 @@ article >>> a img {
   /* width: 40% !important; */
   margin-bottom: -5px;
 }
-article >>> .book-title {
+.article >>> .book-title {
   text-align: left;
 }
 
-article >>> img {
+.article >>> img {
   width: 100%;
 }
 </style>

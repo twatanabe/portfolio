@@ -61,7 +61,7 @@ export default class Thoughts extends Vue {
   padding: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 300px));
   grid-gap: 4vmin;
 }
 
