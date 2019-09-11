@@ -55,4 +55,42 @@ html {
     opacity: 0.4
   }
 }
+
+.sm-gray {
+  @apply text-gray-600 text-xs;
+}
+.header {
+  @apply font-mono text-3xl mb-8 font-bold tracking-tight;
+  font-family: Interface, Avenir Next, sans-serif;
+}
+.sub-header {
+  @apply text-xl mb-6 text-gray-700 font-semibold;
+  font-family: Interface,Avenir Next,sans-serif;
+}
+.section {
+  @apply pb-10 mb-20;
+}
+.bg {
+  @apply rounded-lg;
+  box-shadow: 0 24px 24px rgba(0, 0, 0, 0.03);
+  background-color: hsla(0, 0%, 100%, 0.3);
+}
+.buffer {
+  @apply hidden;
+}
+
+@screen lg {
+  .header {
+    @apply text-5xl mb-16;
+  }
+
+  .buffer {
+    @apply block w-1/4 float-left h-1;
+  }
+
+  .section {
+    @apply mb-32
+  }
+}
+
 </style>

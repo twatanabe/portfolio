@@ -4,16 +4,27 @@ export default {
   /*
   ** Headers of the page
   */
+
   head: {
-    title: process.env.npm_package_name || '',
+    titleTemplate: 'Full-Stack Engineer and Cloud Architect - Takumi Watanabe',
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        hid: "description",
+        name: "description",
+        content: "Takumi Watanabe is a product engineer and cloud architect in California. Currently working as Sr. Cloud Engineer at Cylance"
+      },
+      { hid: 'og-title', name: 'og:title', content: "Product Engineer and Cloud Architect - Takumi Watanabe" },
+      { hid: "og-description",
+        name: "og:description",
+        content: "Takumi Watanabe is a cloud infrastructure and product engineer form Japan. Currently working as Sr. Cloud Engineer at Cylance"
+      },
+      { hid: 'og-type', name: 'og:type', content: "website" },
+      { hid: 'og-url', name: 'og:url', content: "https://takumiwatanabe.me" },
+      { hid: "og-image", name: "og:image", content: "https://takumiwatanabe.me/projects.png" },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{ rel: "icon", type: "image/x-icon", href: "favicon.ico" }]
   },
   /*
   ** Customize the progress-bar color
@@ -27,6 +38,13 @@ export default {
   /*
   ** Plugins to load before mounting the App
   */
+  router: {
+    base: '/',
+    routeNameSplitter: '/',
+    extendRoutes (routes, resolve) {
+      routes.push({name: 'thoughtArticle', path: '/thought/*', component: 'pages/thoughtArticle.vue'})
+    }
+  },
   plugins: [
   ],
   /*

@@ -42,11 +42,11 @@
           on big data aggregation development.
         </p>
         <p
+          class
+        >For web app development, I'm keen with Node.js, Angular2, React, Vue, Express, Axios, GraphQL, Apollo, MongoDB, and Firebase.</p>
+        <p
           class="mb-6"
         >As for backend development, I utilize .Net Core, Docker (EC2, ECS), Terraform, Jenkins, Nginx, AWS Kinesis, AWS Lambda, AWS S3, AWS CloudWatch, MSSQL, PostgreSQL.</p>
-        <p
-          class
-        >For web app development, I'm keen with Node.js, Angular2, Vue, Express, Axios, GraphQL, Apollo, MongoDB, and Firebase.</p>
       </Intro>
       <Intro title="Contact">
         <p class>
@@ -176,41 +176,5 @@ export default class Home extends Vue {}
 </script>
 
 <style lang="postcss">
-.sm-gray {
-  @apply text-gray-600 text-xs;
-}
-.header {
-  @apply font-mono text-3xl mb-8 font-bold tracking-tight;
-  font-family: Interface, Avenir Next, sans-serif;
-}
-.sub-header {
-  @apply text-xl mb-6 text-gray-700 font-semibold;
-  font-family: Interface,Avenir Next,sans-serif;
-}
-.section {
-  @apply pb-10 mb-20;
-}
-.bg {
-  @apply rounded-lg;
-  box-shadow: 0 24px 24px rgba(0, 0, 0, 0.03);
-  background-color: hsla(0, 0%, 100%, 0.3);
-}
-.buffer {
-  @apply hidden;
-}
-
-@screen lg {
-  .header {
-    @apply text-5xl mb-16;
-  }
-
-  .buffer {
-    @apply block w-1/4 float-left h-1;
-  }
-
-  .section {
-    @apply mb-32
-  }
-}
 
 </style>

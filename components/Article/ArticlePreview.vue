@@ -1,6 +1,6 @@
 <template>
   <div class="preview">
-    <router-link :to="`/blog/${article.slug}`">
+    <router-link :to="`/thought/${article.slug}`">
       <div class="previewImage">
         <Fluid :alt="article.title" :src="article.heroImage.fields.file.url"/>
       </div>

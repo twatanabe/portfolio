@@ -3,10 +3,10 @@
     <div class="w-full sm:w-4/12 float-left">
       <router-link to="/" class="title">Takumi Watanabe</router-link>
     </div>
-    <div class="sm:float-right text-right pt-2">
+    <div class="sm:float-right text-right sm:pt-2 pt-16">
       <ul class="nav-item">
         <li class="float-left mr-6">
-          <router-link class="nav-link" exact to="/blog">Blog</router-link>
+          <router-link class="nav-link" exact to="/thoughts">Thoughts</router-link>
         </li>
         <li class="float-left mr-6">
           <router-link class="nav-link" exact to="/projects">Projects</router-link>

@@ -1,4 +1,4 @@
-import { Article, HeroImage } from "../models/article";
+import { Article } from "../models/article";
 
 export class ContentfulAPI {
   contentful = require("contentful");
