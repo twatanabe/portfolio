@@ -2,18 +2,27 @@
   <div class="bg-gradient h-full w-full overflow-x-hidden">
     <div class="max-w-90 px-6 lg:px-12 center">
       <Header />
-      <nuxt />
+
+      <transition
+        name="fade"
+        mode="out-in">
+        <nuxt />
+      </transition>
+
+      <Footer />
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Vue, Component, Prop } from "vue-property-decorator";
-import Header from "../components/Header.vue";
+import Header from "~/components/Header.vue";
+import Footer from "~/components/Footer.vue";
 
 @Component({
   components: {
-    Header
+    Header,
+    Footer
   }
 })
 export default class Default extends Vue {}

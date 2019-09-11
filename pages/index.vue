@@ -8,7 +8,7 @@
       </div>
     </div> -->
 
-    <div class="clearfix section ">
+    <div class="clearfix section bg">
       <Intro class="lg:mt-16">
         <div class="lg:pl-8">
           <span class="sm-gray block">Exciting project in mind?</span>
@@ -21,20 +21,17 @@
       </Intro>
 
       <Intro title="Welcome">
-        <p
-          class="mb-6"
+        <p class="mb-6"
         >Hi I'm Takumi Watanabe, a full-stack software engineer and cloud architect based in California.</p>
-        <p
-          class="mb-6"
+        <p class="mb-6"
         >I create enterprise scale web application for various industries including Security, Laboratory, and Medical.</p>
-        <p
-          class="mb-6"
+        <p class="mb-6"
         >I love building solutions for complex problems that makes me spark creativity and multidisciplinary thoughts while helping others achieve goals.</p>
         <p class>Studied undergrad Mathematics and post-grad Computer Science, good times.</p>
       </Intro>
-      <Intro title="Proficiency">
+      <Intro title="Expertise">
         <p class="mb-6">
-          Currently I work with cloud platform service engineering for AI driven security application at
+          Currently I work with cloud microservice engineering for AI driven security application at
           <a
             href="https://www.cylance.com"
           >Cylance</a>
@@ -57,45 +54,7 @@
       </Intro>
     </div>
 
-    <div class="clearfix">
-      <div class="buffer"></div>
-      <div class="w-3/4 block float-left">
-        <h1 class="header">Projects.</h1>
-      </div>
-    </div>
-
-    <div class="clearfix">
-      <div class="buffer"></div>
-      <Card
-        title="DevUp"
-        :imageUrl="require('@/assets/devup.png')"
-        linkUrl="https://devup-staging.netlify.com"
-        target="_blank"
-      >
-        <p class="text-black mb-4">Community driven project gathering site for developers.</p>
-      </Card>
-      <Card
-        title="TopTrendBooks"
-        :imageUrl="require('@/assets/toptrendbooks.png')"
-        linkUrl="https://toptrendbooks.com"
-        target="_blank"
-      >
-        <p class="text-black mb-4">Rank over 15,000 books everyday based on Reddit 📚</p>
-      </Card>
-      <div class="w-1/4 float-left h-1 lg:block hidden"></div>
-      <Card
-        title="Reverse Proxy Docker Monitorstats"
-        :imageUrl="require('@/assets/grafana2.png')"
-        linkUrl="https://grafana.takumilab.net"
-        target="_blank"
-      >
-        <p class="text-black mb-4"></p>
-      </Card>
-      <!-- <div class="w-1/4 block float-left h-1"></div>
-        <Card title="TopTrendBooks" :imageUrl="require('@/assets/toptrendbooks.png')" linkUrl="https://toptrendbooks.com" target="_blank">
-          <p class="text-black">Rank over 15,000 books everyday based on Reddit 📚</p>
-      </Card>-->
-    </div>
+    <ProjectsComponent />
 
     <div class="clearfix">
       <div class="buffer"></div>
@@ -104,7 +63,7 @@
       </div>
     </div>
 
-    <div class="clearfix section mb-24">
+    <div class="clearfix section bg">
       <Intro class="lg:block hidden"></Intro>
       <Intro w="3">
         <p class="sub-header">Current</p>
@@ -192,26 +151,23 @@
       </Intro>
     </div>
 
-    <Contact />
-
-    <div class="mb-10 clearfix">
-      <!-- <p class="">Contact</p> -->
-      <p class>email: hello@takumiwatanabe.com</p>
-    </div>
+    <ContactComponent />
   </div>
 </template>
 
 <script lang="ts">
 import { Vue, Component, Prop } from "vue-property-decorator";
-import Card from "../components/Card.vue";
-import Intro from "../components/Intro.vue";
-import Contact from "../components/Contact.vue";
+import Card from "~/components/Card.vue";
+import Intro from "~/components/Intro.vue";
+import ContactComponent from "~/components/ContactComponent.vue";
+import ProjectsComponent from "~/components/ProjectsComponent.vue";
 
 @Component({
   components: {
     Card,
     Intro,
-    Contact
+    ProjectsComponent,
+    ContactComponent,
   }
 })
 export default class Home extends Vue {}
@@ -230,7 +186,10 @@ export default class Home extends Vue {}
   font-family: Interface,Avenir Next,sans-serif;
 }
 .section {
-  @apply pb-5 rounded-lg mb-20;
+  @apply pb-10 mb-20;
+}
+.bg {
+  @apply rounded-lg;
   box-shadow: 0 24px 24px rgba(0, 0, 0, 0.03);
   background-color: hsla(0, 0%, 100%, 0.3);
 }
@@ -240,7 +199,7 @@ export default class Home extends Vue {}
 
 @screen lg {
   .header {
-    @apply text-5xl mb-16 ;
+    @apply text-5xl mb-16;
   }
 
   .buffer {
@@ -248,7 +207,7 @@ export default class Home extends Vue {}
   }
 
   .section {
-    @apply mb-24
+    @apply mb-32
   }
 }
 

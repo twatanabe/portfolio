@@ -1,15 +1,13 @@
 <template>
-  <div class="lg:w-1/3 sm:w-1/2 float-left sm:pr-8 mb-12">
+  <div class="card">
     <a :href="linkUrl" target="_blank">
-      <div class="previewImage">
-        <img class="container w-full lg:h-56 rounded-lg" :src="imageUrl" :alt="title"/>
-      </div>
+      <img class="img-box" :src="imageUrl" :alt="title"/>
     </a>
-      <div class="title my-4 text-black font-bold">
-        <p>{{title}}</p>
-      </div>
-      <slot></slot>
-      <a :href="linkUrl" target="_blank">Visit Site →</a>
+    <div class="card-title">
+      <p>{{title}}</p>
+    </div>
+    <slot></slot>
+    <a :href="linkUrl" target="_blank">Visit Site →</a>
   </div>
 </template>
 
@@ -24,5 +22,34 @@ export default class Card extends Vue {
 }
 </script>
 
-<style scoped>
+<style lang="postcss">
+
+.card-title {
+  @apply my-4 text-black font-bold;
+}
+.card {
+  @apply float-left pb-12;
+}
+
+.img-box {
+  @apply w-full rounded-lg;
+}
+
+@screen sm {
+  .card {
+    @apply w-1/2 pr-8;
+  }
+}
+
+@screen lg {
+  .card {
+    /* @apply w-5/12; */
+    width: 30rem
+  }
+
+  .img-box {
+    height: 250px;
+  }
+}
+
 </style>

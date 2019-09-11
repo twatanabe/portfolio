@@ -1,5 +1,7 @@
 <template>
-  <div class="pt-16 clearfix lg:pb-32 pb-12 max-w-90">
+  <div class="mb-10 clearfix">
+    <p>phone: 1-424-999-5344</p>
+    <p>email: hello@takumiwatanabe.com</p>
   </div>
 </template>
 
