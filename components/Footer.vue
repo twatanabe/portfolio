@@ -28,7 +28,7 @@ export default class Footer extends Vue {
 
 <style scoped lang="postcss">
 .footer-section {
-  @apply float-left w-1/4 h-1;
+  @apply float-left;
 }
 .footer-link {
   @apply block text-sm mb-1;

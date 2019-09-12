@@ -1,8 +1,8 @@
 <template>
   <div class="bg-gradient h-full w-full overflow-x-hidden">
-    <div class="main-wrapper">
+    <div class="max-w-90 main-wrapper">
       <div class="vertical-border-wrapper">
-        <div class="vertical-border"></div>
+        <!-- <div class="vertical-border"></div> -->
       </div>
       <div class="vertical-border-wrapper">
         <div class="vertical-border"></div>
@@ -63,7 +63,6 @@ html {
 
   .main-wrapper {
     pointer-events: none;
-    max-width: 90rem;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
