@@ -1,8 +1,8 @@
 <template>
   <div class="pb-32">
-    <div class="footer-section clearfix"></div>
-    <div class="footer-section clearfix"></div>
-    <div class="footer-section clearfix"></div>
+    <div class="buffer clearfix"></div>
+    <div class="buffer clearfix"></div>
+    <div class="buffer clearfix"></div>
     <div class="footer-section clearfix">
       <a href="https://github.com/takumi-watanabe-cs" class="footer-link">
         <font-awesome-icon :icon="['fab', 'github']" class="big-icon" />takumi-watanabe-cs
@@ -39,5 +39,11 @@ export default class Footer extends Vue {
   margin-right: 8px;
   position: relative;
   top: 4px;
+}
+
+@screen lg {
+  .footer-section {
+    @apply float-left w-1/4 h-1;
+  }
 }
 </style>
