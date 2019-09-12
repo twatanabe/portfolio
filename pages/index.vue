@@ -5,7 +5,6 @@
     </div>
 
     <div class="clearfix lg:mb-16"></div>
-    <font-awesome-icon :icon="['fab', 'github']" style="font-size: 30px" />
     <!-- <div class="clearfix">
       <div class="w-1/4 block float-left"></div>
       <div class="w-3/4 block float-left">

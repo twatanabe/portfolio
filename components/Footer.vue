@@ -5,16 +5,13 @@
     <div class="buffer-footer-section clearfix"></div>
     <div class="footer-section clearfix">
       <a href="https://github.com/takumi-watanabe-cs" class="footer-link">
-        <!-- <font-awesome-icon :icon="['fab', 'github']" class="big-icon" />takumi-watanabe-cs -->
-        <img src="@/assets/icon/github.svg" />takumi-watanabe-cs
+        <img src="@/assets/icon/github.png" class="big-icon"/>takumi-watanabe-cs
       </a>
       <a href="https://medium.com/@takumi_watanabe_cs" class="footer-link">
-        <!-- <font-awesome-icon :icon="['fab', 'medium-m']" class="big-icon" />takumi_watanabe_cs -->
-        <img src="@/assets/icon/medium-m.svg" />takumi_watanabe_cs
+        <img src="@/assets/icon/medium.png" class="big-icon"/>takumi_watanabe_cs
       </a>
       <a href="mailto: hi@takumiwatanabe.me" class="footer-link">
-        <img src="@/assets/icon/envelope.svg" />hi@takumiwatanabe.me
-        <!-- <font-awesome-icon :icon="['fas', 'envelope']" class="big-icon" />hi@takumiwatanabe.me -->
+        <img src="@/assets/icon/envelope.png" class="big-icon"/>hi@takumiwatanabe.me
       </a>
     </div>
   </div>
@@ -34,14 +31,12 @@ export default class Footer extends Vue {
   @apply float-left;
 }
 .footer-link {
-  @apply block text-sm mb-1;
+  @apply block text-sm mb-2;
 }
 .big-icon {
-  font-size: 24px !important;
-  color: black;
+  width: 24px;
   margin-right: 8px;
-  position: relative;
-  top: 4px;
+  float: left;
 }
 
   .buffer-footer-section {

@@ -34,7 +34,6 @@ export default {
   ** Global CSS
   */
   css: [
-    '@fortawesome/fontawesome/styles.css',
   ],
   /*
   ** Plugins to load before mounting the App
@@ -60,18 +59,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    "@nuxtjs/dotenv",
-    ['nuxt-fontawesome', {
-      imports: [
-        {
-          set: '@fortawesome/free-solid-svg-icons',
-          icons: ['fas']
-        },
-        {
-          set:'@fortawesome/free-brands-svg-icons',
-          icons: ['fab']
-        }]
-    }]
+    "@nuxtjs/dotenv"
   ],
   /*
   ** Build configuration
