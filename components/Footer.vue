@@ -3,7 +3,7 @@
     <div class="buffer-footer-section clearfix"></div>
     <div class="buffer-footer-section clearfix"></div>
     <div class="buffer-footer-section clearfix"></div>
-    <div class="footer-section clearfix">
+    <!-- <div class="footer-section clearfix">
       <a href="https://github.com/takumi-watanabe-cs" class="footer-link">
         <font-awesome-icon :icon="['fab', 'github']" class="big-icon" />takumi-watanabe-cs
       </a>
@@ -13,7 +13,7 @@
       <a href="mailto: hi@takumiwatanabe.me" class="footer-link">
         <font-awesome-icon :icon="['fas', 'envelope']" class="big-icon" />hi@takumiwatanabe.me
       </a>
-    </div>
+    </div> -->
   </div>
 </template>
 
