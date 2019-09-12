@@ -12,7 +12,7 @@
       </div>
     </div> -->
 
-    <div class="clearfix section bg">
+    <div class="clearfix section bg pb-0">
       <Intro class="lg:mt-16">
         <div class="lg:pl-8">
           <span class="sm-gray block">Have an exciting project in mind?</span>
@@ -153,7 +153,7 @@
       </Intro>
     </div>
 
-    <ContactComponent />
+    <!-- <ContactComponent /> -->
   </div>
 </template>
 

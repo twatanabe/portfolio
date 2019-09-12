@@ -7,8 +7,8 @@
       </div>
     </div>
 
-    <div class="clearfix section">
-      <div class="buffer sm-gray">Project update in progress</div>
+    <div class="clearfix section flex flex-wrap">
+      <div class="buffer sm-gray"></div>
       <Card
         title="DevUp"
         :imageUrl="require('@/assets/devup.png')"

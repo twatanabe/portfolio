@@ -28,7 +28,7 @@ export default class Card extends Vue {
   @apply my-4 text-black font-bold;
 }
 .card {
-  @apply float-left pb-12;
+  @apply pb-12;
 }
 
 .img-box {
@@ -43,12 +43,18 @@ export default class Card extends Vue {
 
 @screen lg {
   .card {
+    @apply pr-12;
+    max-width: 37%;
+  }
+}
+
+@screen lg {
+  .card {
     /* @apply w-5/12; */
-    width: 36rem
   }
 
   .img-box {
-    height: 300px;
+    /* height: 260px; */
     /* height: 14rem; */
   }
 }

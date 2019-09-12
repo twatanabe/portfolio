@@ -1,7 +1,19 @@
 <template>
-  <div class="mb-10 clearfix">
-    <p>phone: 1-424-999-5344</p>
-    <p>email: hi@takumiwatanabe.com</p>
+  <div class="pb-32">
+    <div class="footer-section clearfix"></div>
+    <div class="footer-section clearfix"></div>
+    <div class="footer-section clearfix"></div>
+    <div class="footer-section clearfix">
+      <a href="https://github.com/takumi-watanabe-cs" class="footer-link">
+        <font-awesome-icon :icon="['fab', 'github']" class="big-icon" />takumi-watanabe-cs
+      </a>
+      <a href="https://medium.com/@takumi_watanabe_cs" class="footer-link">
+        <font-awesome-icon :icon="['fab', 'medium-m']" class="big-icon" />takumi_watanabe_cs
+      </a>
+      <a href="mailto: hi@takumiwatanabe.me" class="footer-link">
+        <font-awesome-icon :icon="['fas', 'envelope']" class="big-icon" />hi@takumiwatanabe.me
+      </a>
+    </div>
   </div>
 </template>
 
@@ -15,8 +27,17 @@ export default class Footer extends Vue {
 </script>
 
 <style scoped lang="postcss">
-.title {
-  @apply text-2xl font-mono font-bold text-black no-underline;
-  font-family: Interface,Avenir Next,sans-serif;
+.footer-section {
+  @apply float-left w-1/4 h-1;
+}
+.footer-link {
+  @apply block text-sm mb-1;
+}
+.big-icon {
+  font-size: 24px;
+  color: black;
+  margin-right: 8px;
+  position: relative;
+  top: 4px;
 }
 </style>

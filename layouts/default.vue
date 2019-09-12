@@ -1,12 +1,19 @@
 <template>
   <div class="bg-gradient h-full w-full overflow-x-hidden">
-    <div class="clearfix w-100 vh-100 horizontal-25 fixed">
-      <div class="float-left w-1/4 h-screen">
+    <div class="main-wrapper">
+      <div class="vertical-border-wrapper">
         <div class="vertical-border"></div>
+      </div>
+      <div class="vertical-border-wrapper">
+        <div class="vertical-border"></div>
+      </div>
+      <div class="vertical-border-wrapper">
+      </div>
+      <div class="vertical-border-wrapper">
       </div>
     </div>
 
-    <div class="px-6 lg:px-12 center">
+    <div class="max-w-90 px-6 lg:px-12 center">
       <Header />
 
       <transition name="fade" mode="out-in">
@@ -47,12 +54,28 @@ html {
 
 @screen lg {
   .vertical-border {
-    @apply border-l border-gray-400 h-screen
+    @apply border-l border-gray-400 h-screen;
   }
-  .horizontal-25 {
-    left: 25%;
-    padding-left: 20px;
-    opacity: 0.4
+  .vertical-border-wrapper {
+    @apply h-screen float-left w-1/4 px-4;
+    opacity: 0.4;
+  }
+
+  .main-wrapper {
+    pointer-events: none;
+    max-width: 90rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding-right: 5px;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+  }
+  .absolute-center {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 }
 
@@ -65,7 +88,7 @@ html {
 }
 .sub-header {
   @apply text-xl mb-6 text-gray-700 font-semibold;
-  font-family: Interface,Avenir Next,sans-serif;
+  font-family: Interface, Avenir Next, sans-serif;
 }
 .section {
   @apply pb-10 mb-20;
@@ -89,8 +112,7 @@ html {
   }
 
   .section {
-    @apply mb-32
+    @apply mb-32;
   }
 }
-
 </style>
